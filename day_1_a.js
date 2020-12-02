@@ -1,3 +1,4 @@
+// https://adventofcode.com/2020/day/1
 fs = require('fs')
 fs.readFile('day_1_input', 'utf8', function(err,data) {
     if (err) {
