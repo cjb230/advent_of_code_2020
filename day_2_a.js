@@ -18,15 +18,6 @@ fs.readFile('day_2_input', 'utf8', function(err,data) {
         var counted_char = inputArray[i].substring(space_loc+1, space_loc+2)
         var password = inputArray[i].substring(colon_loc+2)
 
-        /*
-        console.log(inputArray[i])
-        console.log(min_occurrences)
-        console.log(max_occurrences)
-        console.log(counted_char)
-        console.log(password)
-        console.log("")
-        */
-
         var actual_occurrences = 0
         for (let j of password) {
             if (j == counted_char) {actual_occurrences++}
@@ -36,11 +27,6 @@ fs.readFile('day_2_input', 'utf8', function(err,data) {
         } else {
             rows_failing++
         }
-        
-        /*
-        console.log(inputArray[i])
-        console.log(actual_occurrences)
-        */
     }
     console.log("Passing = " + rows_passing)
     console.log("Failing = " + rows_failing)

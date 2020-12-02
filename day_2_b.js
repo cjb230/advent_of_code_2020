@@ -9,7 +9,6 @@ fs.readFile('day_2_input', 'utf8', function(err,data) {
     var inputArrayLength = inputArray.length
     var rows_passing = 0
     var rows_failing = 0
-    //for (i = 0; i < 6; i++) {
     for (i = 0; i < inputArrayLength - 1; i++) {
         var dash_loc = inputArray[i].indexOf("-")
         var space_loc = inputArray[i].indexOf(" ")
@@ -20,22 +19,6 @@ fs.readFile('day_2_input', 'utf8', function(err,data) {
         var password = inputArray[i].substring(colon_loc+2)
         var actual_occurrences = 0
 
-        /*
-        console.log(inputArray[i])
-        console.log(min_occurrences)
-        console.log(max_occurrences)
-        console.log(counted_char)
-        console.log(password)
-        console.log("")
-        
-        console.log(password)
-        console.log(password[position_a-1])
-        console.log(password[position_b-1])
-        console.log("")
-        
-        console.log(inputArray[i])
-        console.log(actual_occurrences)
-        */
         if (password[position_a-1] == given_char) {actual_occurrences++}
         if (password[position_b-1] == given_char) {actual_occurrences++}
         if (actual_occurrences == 1) {
