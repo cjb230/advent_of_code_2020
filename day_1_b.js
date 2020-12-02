@@ -6,7 +6,6 @@ fs.readFile('day_1_input', 'utf8', function(err,data) {
     }
     var inputArray = data.toString().split("\n")
     var inputArrayLength = inputArray.length
-//    console.log(inputArrayLength)
     for (i = 0; i < inputArrayLength - 2; i++) {
         for (j = i+1; j < inputArrayLength - 1; j++) {
             for (k = j+1; k < inputArrayLength; k++) {
