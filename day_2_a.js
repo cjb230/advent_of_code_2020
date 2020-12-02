@@ -1,5 +1,4 @@
-const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constants');
-
+// https://adventofcode.com/2020/day/2
 fs = require('fs')
 fs.readFile('day_2_input', 'utf8', function(err,data) {
     if (err) {
