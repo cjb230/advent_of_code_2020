@@ -1,5 +1,3 @@
-const { exit } = require('process')
-
 fs = require('fs')
 
 function seatID (boardingPass) {
