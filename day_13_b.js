@@ -1,6 +1,3 @@
-const { exit } = require('process')
-const { runInThisContext } = require('vm')
-
 // https://adventofcode.com/2020/day/13
 const executionStartTime = process.hrtime()
 fs = require('fs')
@@ -20,7 +17,6 @@ for (const entry of busList) {
     }
     minutesPastCounter++
 }
-console.log(typeof busesTime)
 
 // we know that the first bus has a residual time of zero.
 stride = busesTime[0][0]
